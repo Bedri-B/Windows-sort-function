@@ -76,9 +76,9 @@ function Sort(a, b){
 
 //Sorting Call 
 //Return sorted list 
-//order(boolean):  true for "ASCENDING" and false for "DESCENDING"
-function WindowsSort(list, order){
-    let x = (order ? 1 : -1);
-    let y = (!order ? 1 : -1);
+//reverese(boolean):  true for "ASCENDING" and false for "DESCENDING"
+function WindowsSort(list, desc = false){
+    let x = (!desc ? 1 : -1);
+    let y = (desc ? 1 : -1);
     return list.sort((a,b) => {return Sort(a,b) ? x : y});
 }
